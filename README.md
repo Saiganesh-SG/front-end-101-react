@@ -24,3 +24,7 @@ Dive deeper into HTML
 1. Clone the repo:
    ```bash
    git clone https://github.com/Saiganesh-SG/front-end-101-react.git
+
+## 📄 License
+
+This project is licensed under the [MIT License](./LICENSE).
