@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Elements</title>
+</head>
+<body>
+    <!-- This is a comment https://www.happyhues.co/palettes/14
+                           https://www.bairesdev.com/tools/ai-colors/
+                           https://www.colorhexa.com/
+                           https://www.w3schools.com/colors/colors_picker.asp
+                           https://www.materialpalette.com/
+                           https://www.colorhunt.co/
+                           these are the websites for color palettes -->
+    <h1 style="color: #264653; text-align: center;">More in HTML</h1> <!--this is inline styling-->
+    <p style="color: #2a9d8f; font-size: 18px; text-align: center; font-family: 'Courier New', Courier, monospace;"> <!--Why is there 3 font in font-family?
+        its because the browser will use the first font it finds on the user's system, if not it will use the second one and so on.-->
+        This page contains more HTML elements like tables, forms, iframes, and semantic elements.
+    </p>
+    <hr style="border: 2px solid #e76f51; margin: 20px 0;"> <!-- Horizontal line with styling -->
+    <h1>                  Media tags in HTML</h1> <!--here even if I give space before text it will be ignored-->
+    <p>Media tags are used to embed media files like images, audio, and video in HTML documents.</p>
+    <h2>Image Tag</h2>
+    <p>The <code>&lt;img&gt;</code> tag is used to embed images in HTML documents.</p> <!--code tag is used to display code snippets-->
+    <h2>Audio Tag</h2>
+    <p>The <code style="color: #515151; background: rgb(192, 253, 255);">&lt;audio&gt;</code> tag is used to embed audio files in HTML documents.</p> <!--we can style the code tag-->
+    <h2>Video Tag</h2>
+    <p>The <code>&lt;video&gt;</code> tag is used to embed video files in HTML documents.</p>
+    <h2>Image Example</h2>
+    <img src="resources/backiee-202851-landscape.jpg" alt="Placeholder Image" width="150" height="150"> <!--src attribute specifies the path to the image
+    alt attribute provides alternative text for the image
+    width and height attributes specify the dimensions of the image-->
+    <figure> <!--figure element is used to group media content-->
+        <img src="https://placehold.co/600x400/orange/white" alt="Placeholder image" width="150" height="150">
+        <figcaption>This is a Placeholder Image</figcaption>  <!--figcaption element is used to provide a caption for the figure-->
+    </figure>
+    <h2>Audio Example</h2>
+    <audio controls> <!--controls attribute adds audio controls like play, pause, and volume-->
+        <source src="resources/sample-audio.mp3" type="audio/mpeg"> <!--source element specifies the audio file and its type , can also use src instead of source tag--> 
+        Your browser does not support the audio element. <!--fallback content if audio is not supported-->
+    </audio>
+    <h2>Video Example</h2>
+    <video controls> <!--controls attribute adds video controls like play, pause, and volume-->
+        <source src="resources/sample-video.mp4" type="video/mp4"> <!--source element specifies the video file and its type , can also use src instead of source tag-->
+        Your browser does not support the video element. <!--fallback content if video is not supported-->
+    </video>
+    <br><br>
+    <video src="" controls></video> <!--we can use src attribute instead of source tag-->
+    <h2>Iframe Tag</h2>
+    <iframe src="https://www.example.com" width="600" height="400"></iframe> <!--iframe element is used to embed another document within the current HTML document-->
+    <br><br><br><br><br><br>
+    <iframe src="https://www.google.com/maps/dir//Radisson+Blu+Hotel,+Chennai+City+Centre,+C-In,+2,+.Ethiraj+Salai,+C+Road,+Egmore,+Chennai,+Tamil+Nadu+600008/@13.0670863,80.1115272,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3a526614093abc83:0xc2b19e69906b782d!2m2!1d80.2557044!2d13.0671023?entry=ttu&g_ep=EgoyMDI1MDgyNS4wIKXMDSoASAFQAw%3D%3D" width="600" height="400"></iframe>
+</body>
+</html>
